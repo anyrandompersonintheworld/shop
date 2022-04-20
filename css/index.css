@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.category{
+    display: flex;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: springgreen;
+    align-items: center;
+}
+.categoryitem{
+    margin: 0 10px;
+    color: lavenderblush;
+    font-weight: 800;
+}
+.container-fluid{
+    padding: 0;
+}
+.logo{
+    font-size: 2rem;
+    padding-left: 10px;
+    color: black;
+    font-weight: 800;
+}
+.banner{
+    background-image: url(/shopping/cinammon.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spamming{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.spam{
+    font-weight: 800;
+    color: springgreen;
+}
+.cards{
+    display: flex;
+}
+.card{
+    margin: 10px;
+    background-color: cadetblue;
+    max-height: 400px;
+}
+body{
+    background-color: springgreen;
+}
+.announcement{
+    text-align: center;
+    font-weight: 800;
+    font-size: 6rem;
+    color: lavender;
+}
+.standard{
+    color: lavender;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+}
+@media screen and (max-width: 600px){
+    .navigation{
+        flex-direction: column;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 900px){
+    .navigation{
+        flex-direction: column;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1250px){
+    .navigation{
+        flex-direction: column;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
